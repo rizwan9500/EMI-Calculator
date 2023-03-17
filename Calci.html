@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--Title-->
+ <title>EMI Calculator</title>
+ <!-- CSS File-->
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <!-- JS File-->
+ <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>EMI Calculator</h1>
+        <!--Form-->
+        <form onsubmit="return calculateEMI()">
+            <!--div-1-->
+            <div>
+              <label for="username">User Name</label>
+              <!--Input User Name-->
+              <input type="text" id="username" name="username" pattern="[a-zA-Z0-9_]+" placeholder="Enter the User Name" required>
+            </div>
+            <!--div-2-->
+            <div>
+                <label>Email ID</label>
+                <!--Input Email ID-->
+                <input type="email" name="emailId" id="emailId" placeholder="Enter the Email ID" placeholder="Enter the Email ID" required>
+            </div>
+            <!--div-3-->
+            <div>
+              <label for="principal">Loan Amount</label>
+              <!--Input Loan Amount-->
+              <input type="number" id="principal" name="principal" pattern="[0-9]+" placeholder="Enter the Principal Amount" required>
+            </div>
+            <!--div-4-->
+            <div>
+              <label for="tenure">Tenure (in months):</label>
+              <!--Input Loan Tenure-->
+              <input type="number" id="tenure" name="tenure" pattern="[0-9]+" placeholder="Enter the Loan Tenure" required>
+            </div>
+            <!--div-5-->
+            <div>
+              <label for="interest">Interest Rate (% PA):</label>
+              <!--Input Interest Rate-->
+              <input type="number" id="interest" name="interest" pattern="[0-9]+(\.[0-9]{1,2})?" placeholder="Enter the Interest Rate (%)" required>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+        <div id="results">
+            <!--Table-1-->
+            <table>
+                <!--Table Head-->
+                    <thead>
+                    <!--Row-1-->
+                    <tr>
+                        <th>User Name</th>
+                        <th>Email ID</th>
+                        <th>Loan Amount</th>
+                        <th>Loan Tenure (Months)</th>
+                        <th>Interest Rate (%)</th>
+                        <th>EMI</th>
+                        <th>Total Amount</th>
+                        <th>Total Interest</th>
+
+                </tr>
+                </thead>
+            <!--Table Body-->
+            <tbody id="data-body">
+            </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
