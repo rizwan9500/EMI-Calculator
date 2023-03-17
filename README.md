@@ -1,4 +1,4 @@
 # EMI-Calculator
 EMI Calculator using HTML, CSS &amp; JS
 
-![Screenshot ](https://user-images.githubusercontent.com/56781049/225910785-dd60e03f-fe29-4790-b5e8-3ee795b85e22.jpg)
+<img width="906" alt="Screenshot 2023-03-17 183053" src="https://user-images.githubusercontent.com/56781049/225912104-0108ac14-bfb2-4de1-ab2f-646f270d9283.png">
